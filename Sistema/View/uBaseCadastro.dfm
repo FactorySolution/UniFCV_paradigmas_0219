@@ -9,25 +9,19 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
   inherited StatusBar1: TStatusBar
     Top = 570
     Width = 789
-    ExplicitLeft = 0
-    ExplicitTop = 484
-    ExplicitWidth = 735
+    ExplicitTop = 570
+    ExplicitWidth = 789
   end
   object pgDados: TPageControl
     Left = 0
     Top = 0
     Width = 789
     Height = 570
-    ActivePage = tsDados
+    ActivePage = tsPesquisa
     Align = alClient
     TabOrder = 1
-    ExplicitTop = 65
-    ExplicitWidth = 735
-    ExplicitHeight = 419
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ExplicitWidth = 727
-      ExplicitHeight = 456
       object dbGridPesquisa: TDBGrid
         Left = 0
         Top = 104
@@ -53,8 +47,6 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
         Color = clWhite
         ParentBackground = False
         TabOrder = 1
-        ExplicitTop = 8
-        ExplicitWidth = 727
         object BotaoSair: TSpeedButton
           Left = 677
           Top = 0
@@ -247,8 +239,6 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 2
-        ExplicitWidth = 727
-        ExplicitHeight = 82
         object edtPesquisa: TLabeledEdit
           Left = 16
           Top = 28
@@ -272,8 +262,6 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
     object tsDados: TTabSheet
       Caption = 'Dados'
       ImageIndex = 1
-      ExplicitWidth = 727
-      ExplicitHeight = 456
     end
   end
   object DSPesquisa: TDataSource

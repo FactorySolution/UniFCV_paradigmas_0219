@@ -10,7 +10,6 @@ uses
 type
   TFrmMain = class(TForm)
     MainMenu: TMainMenu;
-    ImageList: TImageList;
     Cadastros1: TMenuItem;
     Cliente1: TMenuItem;
     StatusBar1: TStatusBar;
@@ -23,6 +22,7 @@ type
     Image48: TImageList;
     Image32: TImageList;
     procedure actClienteExecute(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +35,7 @@ var
 implementation
 
 uses
-  uBaseCadastro;
+  uBaseCadastro, uLogin;
 
 {$R *.dfm}
 
@@ -49,6 +49,18 @@ begin
   finally
     FFormBaseCadastro.Free;
   end;
+end;
+
+procedure TFrmMain.FormShow(Sender: TObject);
+var
+  FLogin: TFrmLogin;
+begin
+  FLogin := TFrmLogin.Create(Self);
+  if FLogin.ShowModal = mrOk then
+  begin
+    ShowMessage('eeeeeeeeeeeeeeeeeeeeee');
+  end else
+    Halt(0);
 end;
 
 end.

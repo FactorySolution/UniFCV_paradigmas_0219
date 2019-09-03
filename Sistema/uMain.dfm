@@ -15,6 +15,7 @@ object FrmMain: TFrmMain
   Menu = MainMenu
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object StatusBar1: TStatusBar
@@ -44,6 +45,7 @@ object FrmMain: TFrmMain
       Width = 105
       Height = 89
       Action = actCliente
+      Layout = blGlyphTop
     end
   end
   object pnlDados: TPanel
@@ -55,7 +57,6 @@ object FrmMain: TFrmMain
     TabOrder = 2
   end
   object MainMenu: TMainMenu
-    Images = ImageList
     Left = 440
     Top = 24
     object Cadastros1: TMenuItem
@@ -65,24 +66,21 @@ object FrmMain: TFrmMain
       end
     end
   end
-  object ImageList: TImageList
-    Left = 440
-    Top = 72
-  end
   object ActionList: TActionList
-    Images = ImageList
-    Left = 440
-    Top = 128
+    Images = Image48
+    Left = 280
+    Top = 32
     object actCliente: TAction
       Caption = 'Cliente'
+      ImageIndex = 10
       ShortCut = 16449
       OnExecute = actClienteExecute
     end
   end
   object Image16: TImageList
     ColorDepth = cd32Bit
-    Left = 472
-    Top = 432
+    Left = 616
+    Top = 152
     Bitmap = {
       494C01013100BF00040010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000040000000D0000000010020000000000000D0
@@ -1811,8 +1809,8 @@ object FrmMain: TFrmMain
     ColorDepth = cd32Bit
     Height = 48
     Width = 48
-    Left = 472
-    Top = 304
+    Left = 616
+    Top = 24
     Bitmap = {
       494C01013100BE00040030003000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000C00000007002000001002000000000000050
@@ -17269,8 +17267,8 @@ object FrmMain: TFrmMain
     ColorDepth = cd32Bit
     Height = 32
     Width = 32
-    Left = 472
-    Top = 368
+    Left = 616
+    Top = 88
     Bitmap = {
       494C01013100BE00040020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000080000000A001000001002000000000000040
