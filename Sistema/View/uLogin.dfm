@@ -1,19 +1,11 @@
-object FrmLogin: TFrmLogin
-  Left = 0
-  Top = 0
+inherited FrmLogin: TFrmLogin
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Login'
   ClientHeight = 158
   ClientWidth = 393
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
-  Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
-  Font.Style = []
-  OldCreateOrder = False
-  Position = poDesktopCenter
+  ExplicitWidth = 399
+  ExplicitHeight = 187
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -23,7 +15,7 @@ object FrmLogin: TFrmLogin
     Height = 158
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 345
+    ExplicitHeight = 139
     object Image1: TImage
       Left = 16
       Top = 24

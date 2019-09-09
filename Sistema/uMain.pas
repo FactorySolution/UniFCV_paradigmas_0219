@@ -43,9 +43,11 @@ procedure TFrmMain.actClienteExecute(Sender: TObject);
 var
   FFormBaseCadastro: TFrmBaseCadastro;
 begin
-  FFormBaseCadastro := TFrmBaseCadastro.Create(self);
+  FFormBaseCadastro := TFrmBaseCadastro.Create(Self);
   try
+
     FFormBaseCadastro.ShowModal;
+
   finally
     FFormBaseCadastro.Free;
   end;

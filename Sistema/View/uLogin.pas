@@ -4,10 +4,10 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, uBase;
 
 type
-  TFrmLogin = class(TForm)
+  TFrmLogin = class(TFrmBase)
     Panel1: TPanel;
     edtLogin: TLabeledEdit;
     EdtSenha: TLabeledEdit;
@@ -30,13 +30,13 @@ implementation
 
 procedure TFrmLogin.btnLogarClick(Sender: TObject);
 begin
-  // Login: admin
-  // Senha: 123mudar;
-  if SameText(edtLogin.Text,'admin') and
-     SameText(EdtSenha.Text,'123mudar') then
+  if SessaoUsuario.Autenticar(edtLogin.Text,EdtSenha.Text) then
   begin
-    ShowMessage('Bem vindo ao melhor sistema do Mundo!!!!!');
+    ModalResult := mrOk;
   end;
+
+
+
 
 end;
 

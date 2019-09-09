@@ -5,7 +5,8 @@ uses
   uMain in 'uMain.pas' {FrmMain},
   uBase in 'View\uBase.pas' {FrmBase},
   uBaseCadastro in 'View\uBaseCadastro.pas' {FrmBaseCadastro},
-  uLogin in 'View\uLogin.pas' {FrmLogin};
+  uLogin in 'View\uLogin.pas' {FrmLogin},
+  SessaoUsuario in 'Sessao\SessaoUsuario.pas';
 
 {$R *.res}
 

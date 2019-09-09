@@ -19,6 +19,20 @@ type
     ActionListBase: TActionList;
     ImagensCadastros: TImageList;
     ImagensCadastrosD: TImageList;
+    pnlPesquisa: TPanel;
+    edtPesquisa: TLabeledEdit;
+    btnPesquisa: TButton;
+    PopUpAtalhosMenu: TPopupMenu;
+    menuInserir: TMenuItem;
+    menuAlterar: TMenuItem;
+    menuExcluir: TMenuItem;
+    menuFiltrar: TMenuItem;
+    menuExportarCompleto: TMenuItem;
+    menuImprimirCompleto: TMenuItem;
+    menuSairCompleto: TMenuItem;
+    menuConsultar: TMenuItem;
+    menuCancelar: TMenuItem;
+    menuSalvar: TMenuItem;
     PanelToolBar: TPanel;
     BotaoSair: TSpeedButton;
     BotaoSeparador1: TSpeedButton;
@@ -35,24 +49,13 @@ type
     BotaoProximoRegistro: TSpeedButton;
     BotaoUltimoRegistro: TSpeedButton;
     BotaoProximaPagina: TSpeedButton;
-    pnlPesquisa: TPanel;
-    edtPesquisa: TLabeledEdit;
-    btnPesquisa: TButton;
-    PopUpAtalhosMenu: TPopupMenu;
-    menuInserir: TMenuItem;
-    menuAlterar: TMenuItem;
-    menuExcluir: TMenuItem;
-    menuFiltrar: TMenuItem;
-    menuExportarCompleto: TMenuItem;
-    menuImprimirCompleto: TMenuItem;
-    menuSairCompleto: TMenuItem;
-    menuConsultar: TMenuItem;
-    menuCancelar: TMenuItem;
-    menuSalvar: TMenuItem;
+    StatusBar1: TStatusBar;
   private
     { Private declarations }
   public
+    constructor Create(AOwner: TComponent); override;
     { Public declarations }
+
   end;
 
 var
@@ -61,5 +64,13 @@ var
 implementation
 
 {$R *.dfm}
+
+{ TFrmBaseCadastro }
+
+constructor TFrmBaseCadastro.Create(AOwner: TComponent);
+begin
+  inherited;
+
+end;
 
 end.

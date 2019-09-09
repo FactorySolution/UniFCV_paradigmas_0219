@@ -6,27 +6,21 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
   ExplicitHeight = 628
   PixelsPerInch = 96
   TextHeight = 13
-  inherited StatusBar1: TStatusBar
-    Top = 570
-    Width = 789
-    ExplicitTop = 570
-    ExplicitWidth = 789
-  end
   object pgDados: TPageControl
     Left = 0
-    Top = 0
+    Top = 31
     Width = 789
-    Height = 570
+    Height = 558
     ActivePage = tsPesquisa
     Align = alClient
-    TabOrder = 1
+    TabOrder = 0
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
       object dbGridPesquisa: TDBGrid
         Left = 0
-        Top = 104
+        Top = 53
         Width = 781
-        Height = 438
+        Height = 458
         Align = alBottom
         DataSource = DSPesquisa
         TabOrder = 0
@@ -36,209 +30,16 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
       end
-      object PanelToolBar: TPanel
+      object pnlPesquisa: TPanel
         Left = 0
         Top = 0
         Width = 781
-        Height = 31
-        Align = alTop
-        BevelKind = bkFlat
-        BevelOuter = bvNone
-        Color = clWhite
-        ParentBackground = False
-        TabOrder = 1
-        object BotaoSair: TSpeedButton
-          Left = 677
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Sair [F8]'
-          Align = alRight
-          Caption = 'Sair [F8]'
-          ParentShowHint = False
-          ShowHint = True
-          ExplicitLeft = 888
-        end
-        object BotaoSeparador1: TSpeedButton
-          Left = 667
-          Top = 0
-          Width = 10
-          Height = 27
-          Align = alRight
-          Caption = '|'
-          Flat = True
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          ExplicitLeft = 585
-        end
-        object BotaoSeparador3: TSpeedButton
-          Left = 153
-          Top = 0
-          Width = 10
-          Height = 27
-          Align = alLeft
-          Caption = '|'
-          Flat = True
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentFont = False
-          ExplicitLeft = 1
-          ExplicitTop = -4
-        end
-        object BotaoInserir: TSpeedButton
-          Left = 163
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Inserir [F2]'
-          Align = alLeft
-          Caption = 'Inserir [F2]'
-          ParentShowHint = False
-          ShowHint = True
-        end
-        object BotaoAlterar: TSpeedButton
-          Left = 263
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Alterar [F3]'
-          Align = alLeft
-          Caption = 'Alterar [F3]'
-          ParentShowHint = False
-          ShowHint = True
-          ExplicitLeft = 243
-        end
-        object BotaoExcluir: TSpeedButton
-          Left = 363
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Excluir [F4]'
-          Align = alLeft
-          Caption = 'Excluir [F4]'
-          ParentShowHint = False
-          ShowHint = True
-          ExplicitLeft = 369
-          ExplicitTop = -4
-        end
-        object BotaoCancelar: TSpeedButton
-          Left = 463
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Cancelar [F11]'
-          Align = alLeft
-          Caption = 'Cancelar [F11]'
-          ParentShowHint = False
-          ShowHint = True
-          ExplicitLeft = 403
-        end
-        object BotaoSalvar: TSpeedButton
-          Left = 563
-          Top = 0
-          Width = 100
-          Height = 27
-          Hint = 'Salvar [F12]'
-          Align = alLeft
-          Caption = 'Salvar [F12]'
-          ParentShowHint = False
-          ShowHint = True
-          ExplicitLeft = 483
-        end
-        object PanelNavegacao: TPanel
-          Left = 0
-          Top = 0
-          Width = 153
-          Height = 27
-          Align = alLeft
-          BevelOuter = bvNone
-          TabOrder = 0
-          object BotaoPaginaAnterior: TSpeedButton
-            Left = 0
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 1
-            ExplicitTop = 1
-            ExplicitHeight = 25
-          end
-          object BotaoPrimeiroRegistro: TSpeedButton
-            Left = 25
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 57
-            ExplicitTop = -4
-            ExplicitHeight = 25
-          end
-          object BotaoRegistroAnterior: TSpeedButton
-            Left = 50
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 74
-            ExplicitHeight = 25
-          end
-          object BotaoProximoRegistro: TSpeedButton
-            Left = 75
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 99
-            ExplicitHeight = 25
-          end
-          object BotaoUltimoRegistro: TSpeedButton
-            Left = 100
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 148
-            ExplicitHeight = 25
-          end
-          object BotaoProximaPagina: TSpeedButton
-            Left = 125
-            Top = 0
-            Width = 25
-            Height = 27
-            Align = alLeft
-            ParentShowHint = False
-            ShowHint = True
-            ExplicitLeft = 157
-            ExplicitHeight = 25
-          end
-        end
-      end
-      object pnlPesquisa: TPanel
-        Left = 0
-        Top = 31
-        Width = 781
-        Height = 73
+        Height = 53
         Align = alClient
         BevelOuter = bvNone
         ParentBackground = False
-        TabOrder = 2
+        TabOrder = 1
+        ExplicitHeight = 72
         object edtPesquisa: TLabeledEdit
           Left = 16
           Top = 28
@@ -258,10 +59,214 @@ inherited FrmBaseCadastro: TFrmBaseCadastro
           TabOrder = 1
         end
       end
+      object StatusBar1: TStatusBar
+        Left = 0
+        Top = 511
+        Width = 781
+        Height = 19
+        Panels = <>
+        ExplicitLeft = 656
+        ExplicitTop = 520
+        ExplicitWidth = 0
+      end
     end
     object tsDados: TTabSheet
       Caption = 'Dados'
       ImageIndex = 1
+    end
+  end
+  object PanelToolBar: TPanel
+    Left = 0
+    Top = 0
+    Width = 789
+    Height = 31
+    Align = alTop
+    BevelKind = bkFlat
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 1
+    object BotaoSair: TSpeedButton
+      Left = 685
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Sair [F8]'
+      Align = alRight
+      Caption = 'Sair [F8]'
+      ParentShowHint = False
+      ShowHint = True
+      ExplicitLeft = 888
+    end
+    object BotaoSeparador1: TSpeedButton
+      Left = 675
+      Top = 0
+      Width = 10
+      Height = 27
+      Align = alRight
+      Caption = '|'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ExplicitLeft = 585
+    end
+    object BotaoSeparador3: TSpeedButton
+      Left = 153
+      Top = 0
+      Width = 10
+      Height = 27
+      Align = alLeft
+      Caption = '|'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ExplicitLeft = 1
+      ExplicitTop = -4
+    end
+    object BotaoInserir: TSpeedButton
+      Left = 163
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Inserir [F2]'
+      Align = alLeft
+      Caption = 'Inserir [F2]'
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object BotaoAlterar: TSpeedButton
+      Left = 263
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Alterar [F3]'
+      Align = alLeft
+      Caption = 'Alterar [F3]'
+      ParentShowHint = False
+      ShowHint = True
+      ExplicitLeft = 243
+    end
+    object BotaoExcluir: TSpeedButton
+      Left = 363
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Excluir [F4]'
+      Align = alLeft
+      Caption = 'Excluir [F4]'
+      ParentShowHint = False
+      ShowHint = True
+      ExplicitLeft = 369
+      ExplicitTop = -4
+    end
+    object BotaoCancelar: TSpeedButton
+      Left = 463
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Cancelar [F11]'
+      Align = alLeft
+      Caption = 'Cancelar [F11]'
+      ParentShowHint = False
+      ShowHint = True
+      ExplicitLeft = 403
+    end
+    object BotaoSalvar: TSpeedButton
+      Left = 563
+      Top = 0
+      Width = 100
+      Height = 27
+      Hint = 'Salvar [F12]'
+      Align = alLeft
+      Caption = 'Salvar [F12]'
+      ParentShowHint = False
+      ShowHint = True
+      ExplicitLeft = 483
+    end
+    object PanelNavegacao: TPanel
+      Left = 0
+      Top = 0
+      Width = 153
+      Height = 27
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 0
+      object BotaoPaginaAnterior: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 1
+        ExplicitTop = 1
+        ExplicitHeight = 25
+      end
+      object BotaoPrimeiroRegistro: TSpeedButton
+        Left = 25
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 57
+        ExplicitTop = -4
+        ExplicitHeight = 25
+      end
+      object BotaoRegistroAnterior: TSpeedButton
+        Left = 50
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 74
+        ExplicitHeight = 25
+      end
+      object BotaoProximoRegistro: TSpeedButton
+        Left = 75
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 99
+        ExplicitHeight = 25
+      end
+      object BotaoUltimoRegistro: TSpeedButton
+        Left = 100
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 148
+        ExplicitHeight = 25
+      end
+      object BotaoProximaPagina: TSpeedButton
+        Left = 125
+        Top = 0
+        Width = 25
+        Height = 27
+        Align = alLeft
+        ParentShowHint = False
+        ShowHint = True
+        ExplicitLeft = 157
+        ExplicitHeight = 25
+      end
     end
   end
   object DSPesquisa: TDataSource

@@ -14,14 +14,4 @@ object FrmBase: TFrmBase
   Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
-  object StatusBar1: TStatusBar
-    Left = 0
-    Top = 40
-    Width = 447
-    Height = 19
-    Panels = <>
-    ExplicitLeft = 264
-    ExplicitTop = 32
-    ExplicitWidth = 0
-  end
 end
